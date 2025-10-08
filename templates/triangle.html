@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Area of Triangle</h1>
+<form method="POST">
+    <label>Base:</label>
+    <input type="number" step="any" name="base" required>
+    <label>Height:</label>
+    <input type="number" step="any" name="height" required>
+    <button type="submit">Calculate</button>
+</form>
+
+{% if area %}
+<p>Area of Triangle: {{ area }}</p>
+{% endif %}
+{% endblock %}

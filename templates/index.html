@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+{% block content %}
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is a showcase of my personal projects and programming works.</p>
+
+    <ul>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <h2>Programming Works</h2>
+        <ul>
+            <li><a href="{{ url_for('circle_area') }}">Area of a Circle</a></li>
+            <li><a href="{{ url_for('triangle_area') }}">Area of a Triangle</a></li>
+        </ul>
+    </ul>
+{% endblock %}
+
+

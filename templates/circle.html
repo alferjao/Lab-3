@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Area of Circle</h1>
+<form method="POST">
+    <label>Radius:</label>
+    <input type="number" step="any" name="radius" required>
+    <button type="submit">Calculate</button>
+</form>
+
+{% if area %}
+<p>Area of Circle: {{ area }}</p>
+{% endif %}
+{% endblock %}
